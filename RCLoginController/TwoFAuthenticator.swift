@@ -9,11 +9,6 @@
 import UIKit
 
 
-
-let kRecievedAuthID = "RecievedAuthID"
-let kTokenIsVerfied = "TokenIsVerified"
-
-
 class TwoFAuthenticator: NSObject {
     
     

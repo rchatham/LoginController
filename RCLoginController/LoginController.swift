@@ -10,7 +10,7 @@ import UIKit
 
 protocol Loggable { //@objc if you want optional email
     
-    init()
+//    init()
     init(phoneNumber: String, countryCode: Int)
     
     var phoneNumber : String { get set }

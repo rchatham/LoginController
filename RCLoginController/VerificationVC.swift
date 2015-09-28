@@ -65,19 +65,19 @@ class VerificationVC : ESModalViewController {
                     }
                 }
                 
-                }, completionHandler: {
-                    [weak self]
-                    (verifyingView: UIView, user: User?) -> Void in
-                    if self?.view.center != nil {
-                        if !verifyingView.hidden {
-                            verifyingView.hidden = true
-                        }
-                        
-                        let nextVC = CreateProfileVC()
-                        nextVC.user = user
-                        self?.navigationController?.pushViewController(nextVC, animated: true)
-                        
+            }, completionHandler: {
+                [weak self]
+                (verifyingView: UIView, user: User?) -> Void in
+                if self?.view.center != nil {
+                    if !verifyingView.hidden {
+                        verifyingView.hidden = true
                     }
+                        
+                    let nextVC = CreateProfileVC()
+                    nextVC.user = user
+                    self?.navigationController?.pushViewController(nextVC, animated: true)
+                        
+                }
             })
         }
         

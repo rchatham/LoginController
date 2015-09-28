@@ -132,11 +132,7 @@
 				302EA4081BB72895003C64F5 /* AppDelegate.swift */,
 				302EA40A1BB72895003C64F5 /* ViewController.swift */,
 				30553FE71BB8384C009E4EAB /* User.swift */,
-				30553FE31BB7B1B5009E4EAB /* LoginVCs */,
-				30553FE61BB7B23E009E4EAB /* ESPresentationController */,
-				302EA4361BB72960003C64F5 /* LoginController.swift */,
-				302EA4381BB7299F003C64F5 /* Login.swift */,
-				302EA43A1BB72C18003C64F5 /* TwoFAuthenticator.swift */,
+				30553FE91BB8500E009E4EAB /* RCLoginController */,
 				302EA40C1BB72895003C64F5 /* Main.storyboard */,
 				302EA40F1BB72895003C64F5 /* Assets.xcassets */,
 				302EA4111BB72895003C64F5 /* LaunchScreen.storyboard */,
@@ -203,6 +199,18 @@
 				30553FE41BB7B1F3009E4EAB /* Presentation Control */,
 			);
 			name = ESPresentationController;
+			sourceTree = "<group>";
+		};
+		30553FE91BB8500E009E4EAB /* RCLoginController */ = {
+			isa = PBXGroup;
+			children = (
+				30553FE31BB7B1B5009E4EAB /* LoginVCs */,
+				30553FE61BB7B23E009E4EAB /* ESPresentationController */,
+				302EA4361BB72960003C64F5 /* LoginController.swift */,
+				302EA4381BB7299F003C64F5 /* Login.swift */,
+				302EA43A1BB72C18003C64F5 /* TwoFAuthenticator.swift */,
+			);
+			name = RCLoginController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -50,7 +50,7 @@ class CreateProfileVC : ESModalViewController {
     }
     
     @IBAction func goToNextVC(sender: UIButton) {
-        
+        ESPresentationManager.sharedInstance.presentationController?.dismissModal()
         
     }
     

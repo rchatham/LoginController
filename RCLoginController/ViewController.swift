@@ -8,9 +8,6 @@
 
 import UIKit
 
-protocol ESModalViewDelegate{
-    func modalPresentationSize()->CGSize
-}
 
 
 
@@ -38,9 +35,5 @@ class ViewController: UIViewController {
         presentViewController(navCtl, animated: true, completion: nil)
     }
 
-    
-    
-    
-    
 }
 

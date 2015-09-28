@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol ESModalViewDelegate{
+    func modalPresentationSize()->CGSize
+}
+
 class ESPresentationManager: NSObject, UIViewControllerTransitioningDelegate {
     
     class var sharedInstance: ESPresentationManager {
