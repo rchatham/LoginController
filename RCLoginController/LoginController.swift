@@ -10,7 +10,7 @@ import UIKit
 
 protocol Loggable { //@objc if you want optional email
     
-//    init()
+    init()
     init(phoneNumber: String, countryCode: Int)
     
     var phoneNumber : String { get set }
@@ -114,6 +114,16 @@ class LoginController {
             }
         } else {
             return type
+        }
+    }
+    
+    func loadFromSaved<T : Loggable>(completion: (T->())? ){
+        //Do on background thread
+        
+        if let load : T = loadFromSaved(fromPath: T().savePath) {
+            completion?(load)
+        } else {
+            completion?(T())
         }
     }
     
