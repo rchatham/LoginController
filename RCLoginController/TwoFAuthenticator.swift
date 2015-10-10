@@ -80,6 +80,9 @@ class TwoFAuthenticator: NSObject {
         task.resume()
     }
     
+    func RequestSMSToken(authID: NSNumber) {
+        RequestSMSToken(authID, completionHandler: nil)
+    }
     
     func RequestSMSToken(authID: NSNumber, completionHandler: (Void -> Void)? ) {
         

@@ -9,7 +9,7 @@
 import Foundation
 
 
-class Login {
+class RCLogin {
     
     var phoneNumber: String?
     var countryCode: Int?

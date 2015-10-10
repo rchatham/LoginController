@@ -9,14 +9,20 @@
 import UIKit
 
 
-class VerificationVC : ESModalViewController {
-    
-    @IBOutlet weak var smsCodeTextField: UITextField!
+class VerificationVC : ESModalViewController, UITextFieldDelegate  {
     
     
-    var loginController = LoginController() {
+    var loginController : RCLoginController! {
         didSet {
             
+        }
+    }
+    
+    
+    
+    @IBOutlet weak var smsCodeTextField: UITextField! {
+        didSet {
+            smsCodeTextField.delegate = self
         }
     }
     
@@ -51,6 +57,11 @@ class VerificationVC : ESModalViewController {
         super.didReceiveMemoryWarning()
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        smsCodeTextField.resignFirstResponder()
+        return true
+    }
+    
     @IBAction func goToNextVC(sender: UIButton) {
         
         if smsCodeTextField.text != nil && !smsCodeTextField.text!.isEmpty {
@@ -67,7 +78,7 @@ class VerificationVC : ESModalViewController {
                 
             }, completionHandler: {
                 [weak self]
-                (verifyingView: UIView, user: User?) -> Void in
+                (verifyingView: UIView, user: RCUser?) -> Void in
                 if self?.view.center != nil {
                     if !verifyingView.hidden {
                         verifyingView.hidden = true
@@ -75,6 +86,8 @@ class VerificationVC : ESModalViewController {
                         
                     let nextVC = CreateProfileVC()
                     nextVC.user = user
+                    nextVC.view.backgroundColor = self?.view.backgroundColor
+                    
                     self?.navigationController?.pushViewController(nextVC, animated: true)
                         
                 }

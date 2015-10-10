@@ -23,13 +23,24 @@
                                     <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WyO-H2-IIP"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Logged In!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UG0-NG-c8u">
+                                <rect key="frame" x="243.5" y="323" width="113" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="X9S-Mk-H1B" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6Wl-Po-Rah"/>
+                            <constraint firstItem="UG0-NG-c8u" firstAttribute="top" secondItem="X9S-Mk-H1B" secondAttribute="bottom" constant="8" id="TIV-zx-PfV"/>
+                            <constraint firstItem="UG0-NG-c8u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZDq-TG-XmG"/>
                             <constraint firstItem="X9S-Mk-H1B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="auR-tX-sTZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userStatusLabel" destination="UG0-NG-c8u" id="b0z-o1-ulA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

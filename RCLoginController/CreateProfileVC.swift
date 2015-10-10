@@ -9,13 +9,33 @@
 import UIKit
 
 
-class CreateProfileVC : ESModalViewController {
+class CreateProfileVC : ESModalViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var smsCodeTextField: UITextField!
     
-    var user : User? {
+    var user : RCUser? {
         didSet {
             print("The user has landed: \(user)")
+        }
+    }
+    
+    
+    @IBOutlet weak var firstNameTextField: UITextField! {
+        didSet {
+            firstNameTextField.delegate = self
+        }
+    }
+    
+    @IBOutlet weak var lastNameTextField: UITextField! {
+        didSet {
+            lastNameTextField.delegate = self
+        }
+    }
+    
+    @IBOutlet weak var imageView: UIImageView! {
+        didSet {
+            imageView.contentMode = UIViewContentMode.ScaleAspectFill
+            imageView.layer.cornerRadius = imageView.frame.size.width/2
+            imageView.clipsToBounds = true
         }
     }
     
@@ -49,7 +69,21 @@ class CreateProfileVC : ESModalViewController {
         super.didReceiveMemoryWarning()
     }
     
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        firstNameTextField.resignFirstResponder()
+        lastNameTextField.resignFirstResponder()
+        return true
+    }
+    
+    
     @IBAction func goToNextVC(sender: UIButton) {
+        
+        user?.firstName = firstNameTextField.text
+        user?.lastName = lastNameTextField.text
+        
+        (ESPresentationManager.sharedInstance.presentationController?.presentingViewController as! RCLoginVC).user = user
+        
         ESPresentationManager.sharedInstance.presentationController?.dismissModal()
         
     }

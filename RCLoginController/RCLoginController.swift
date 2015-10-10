@@ -21,21 +21,30 @@ protocol Loggable { //@objc if you want optional email
     
 }
 
-class LoginController {
+class RCLoginController {
     
-    private var login = Login()
+    private var authyAPIKey : String!
     
-    let twoFA = TwoFAuthenticator(authyAPIKey: "X3FQn6Gliy0TzDCJxqbfGrydzzYylcmy")
+    private var login = RCLogin()
+    
+    private lazy var twoFA : TwoFAuthenticator = {
+        [unowned self] in
+        return TwoFAuthenticator(authyAPIKey: self.authyAPIKey)
+        }()
+    
+    
+    
+    init() {}
+    init(authyAPIKey : String) {
+        self.authyAPIKey = authyAPIKey
+    }
+    
+    
     
     func didEnter(phoneNumber phoneNumber: String, withCountryCode countrycode: Int) {
-        login.phoneNumber = phoneNumber
-        login.countryCode = countrycode
-        twoFA.CreateNewUser(phoneNumber, countryCode: countrycode) {
-            [weak self]
-            (authID) -> () in
-            self?.didRecieve(authID: authID)
-        }
+        didEnter(phoneNumber: phoneNumber, withCountryCode: countrycode, completion: nil)
     }
+
     
     func didEnter(phoneNumber phoneNumber: String, withCountryCode countrycode: Int, completion: (Void -> ())? ) {
         login.phoneNumber = phoneNumber
@@ -49,14 +58,7 @@ class LoginController {
     }
     
     func didEnter(phoneNumber phoneNumber: String, withCountryCode countrycode: Int, andEmail email: String) {
-        login.phoneNumber = phoneNumber
-        login.countryCode = countrycode
-        login.email = email
-        twoFA.CreateNewUser(phoneNumber, countryCode: countrycode, email: email) {
-            [weak self]
-            (authID) -> () in
-            self?.didRecieve(authID: authID)
-        }
+        didEnter(phoneNumber: phoneNumber, withCountryCode: countrycode, andEmail: email, completion: nil)
     }
     
     func didEnter(phoneNumber phoneNumber: String, withCountryCode countrycode: Int, andEmail email: String, completion: (Void -> ())? ) {
@@ -73,7 +75,7 @@ class LoginController {
     
     func didRecieve(authID authID: NSNumber) {
         login.authID = authID
-        twoFA.RequestSMSToken(authID) {}
+        twoFA.RequestSMSToken(authID, completionHandler: nil)
     }
     
     func didEnter<T : Loggable>(token token: String, openingHandler: (UIView -> Void)?, completionHandler: ((UIView, T?) -> Void)? ) {
@@ -117,13 +119,13 @@ class LoginController {
         }
     }
     
-    func loadFromSaved<T : Loggable>(completion: (T->())? ){
+    func loadFromSaved<T : Loggable>(completion: (T?->())? ){
         //Do on background thread
         
         if let load : T = loadFromSaved(fromPath: T().savePath) {
             completion?(load)
         } else {
-            completion?(T())
+            completion?(nil)
         }
     }
     

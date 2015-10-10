@@ -14,9 +14,10 @@
 		302EA4131BB72895003C64F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 302EA4111BB72895003C64F5 /* LaunchScreen.storyboard */; };
 		302EA41E1BB72895003C64F5 /* RCLoginControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302EA41D1BB72895003C64F5 /* RCLoginControllerTests.swift */; };
 		302EA4291BB72895003C64F5 /* RCLoginControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302EA4281BB72895003C64F5 /* RCLoginControllerUITests.swift */; };
-		302EA4371BB72960003C64F5 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302EA4361BB72960003C64F5 /* LoginController.swift */; settings = {ASSET_TAGS = (); }; };
-		302EA4391BB7299F003C64F5 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302EA4381BB7299F003C64F5 /* Login.swift */; settings = {ASSET_TAGS = (); }; };
+		302EA4371BB72960003C64F5 /* RCLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302EA4361BB72960003C64F5 /* RCLoginController.swift */; settings = {ASSET_TAGS = (); }; };
+		302EA4391BB7299F003C64F5 /* RCLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302EA4381BB7299F003C64F5 /* RCLogin.swift */; settings = {ASSET_TAGS = (); }; };
 		302EA43B1BB72C18003C64F5 /* TwoFAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302EA43A1BB72C18003C64F5 /* TwoFAuthenticator.swift */; settings = {ASSET_TAGS = (); }; };
+		3049FDD81BC87AB6001AF426 /* RCLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049FDD71BC87AB6001AF426 /* RCLoginVC.swift */; settings = {ASSET_TAGS = (); }; };
 		30553FCD1BB7B138009E4EAB /* CreateProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30553FCB1BB7B138009E4EAB /* CreateProfileVC.swift */; settings = {ASSET_TAGS = (); }; };
 		30553FCE1BB7B138009E4EAB /* CreateProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30553FCC1BB7B138009E4EAB /* CreateProfileVC.xib */; settings = {ASSET_TAGS = (); }; };
 		30553FD01BB7B14C009E4EAB /* ESDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30553FCF1BB7B14C009E4EAB /* ESDismissAnimator.swift */; settings = {ASSET_TAGS = (); }; };
@@ -29,7 +30,7 @@
 		30553FDE1BB7B197009E4EAB /* PhoneAndCountryCodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30553FDC1BB7B197009E4EAB /* PhoneAndCountryCodeVC.xib */; settings = {ASSET_TAGS = (); }; };
 		30553FE11BB7B1A9009E4EAB /* VerificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30553FDF1BB7B1A9009E4EAB /* VerificationVC.swift */; settings = {ASSET_TAGS = (); }; };
 		30553FE21BB7B1A9009E4EAB /* VerificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30553FE01BB7B1A9009E4EAB /* VerificationVC.xib */; settings = {ASSET_TAGS = (); }; };
-		30553FE81BB8384C009E4EAB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30553FE71BB8384C009E4EAB /* User.swift */; settings = {ASSET_TAGS = (); }; };
+		30553FE81BB8384C009E4EAB /* RCUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30553FE71BB8384C009E4EAB /* RCUser.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,9 +64,10 @@
 		302EA4241BB72895003C64F5 /* RCLoginControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCLoginControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		302EA4281BB72895003C64F5 /* RCLoginControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCLoginControllerUITests.swift; sourceTree = "<group>"; };
 		302EA42A1BB72895003C64F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		302EA4361BB72960003C64F5 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		302EA4381BB7299F003C64F5 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		302EA4361BB72960003C64F5 /* RCLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCLoginController.swift; sourceTree = "<group>"; };
+		302EA4381BB7299F003C64F5 /* RCLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCLogin.swift; sourceTree = "<group>"; };
 		302EA43A1BB72C18003C64F5 /* TwoFAuthenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoFAuthenticator.swift; sourceTree = "<group>"; };
+		3049FDD71BC87AB6001AF426 /* RCLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCLoginVC.swift; sourceTree = "<group>"; };
 		30553FCB1BB7B138009E4EAB /* CreateProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProfileVC.swift; sourceTree = "<group>"; };
 		30553FCC1BB7B138009E4EAB /* CreateProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateProfileVC.xib; sourceTree = "<group>"; };
 		30553FCF1BB7B14C009E4EAB /* ESDismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESDismissAnimator.swift; sourceTree = "<group>"; };
@@ -78,7 +80,7 @@
 		30553FDC1BB7B197009E4EAB /* PhoneAndCountryCodeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhoneAndCountryCodeVC.xib; sourceTree = "<group>"; };
 		30553FDF1BB7B1A9009E4EAB /* VerificationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationVC.swift; sourceTree = "<group>"; };
 		30553FE01BB7B1A9009E4EAB /* VerificationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerificationVC.xib; sourceTree = "<group>"; };
-		30553FE71BB8384C009E4EAB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		30553FE71BB8384C009E4EAB /* RCUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +133,6 @@
 			children = (
 				302EA4081BB72895003C64F5 /* AppDelegate.swift */,
 				302EA40A1BB72895003C64F5 /* ViewController.swift */,
-				30553FE71BB8384C009E4EAB /* User.swift */,
 				30553FE91BB8500E009E4EAB /* RCLoginController */,
 				302EA40C1BB72895003C64F5 /* Main.storyboard */,
 				302EA40F1BB72895003C64F5 /* Assets.xcassets */,
@@ -204,11 +205,13 @@
 		30553FE91BB8500E009E4EAB /* RCLoginController */ = {
 			isa = PBXGroup;
 			children = (
+				3049FDD71BC87AB6001AF426 /* RCLoginVC.swift */,
+				30553FE71BB8384C009E4EAB /* RCUser.swift */,
+				302EA4361BB72960003C64F5 /* RCLoginController.swift */,
+				302EA4381BB7299F003C64F5 /* RCLogin.swift */,
+				302EA43A1BB72C18003C64F5 /* TwoFAuthenticator.swift */,
 				30553FE31BB7B1B5009E4EAB /* LoginVCs */,
 				30553FE61BB7B23E009E4EAB /* ESPresentationController */,
-				302EA4361BB72960003C64F5 /* LoginController.swift */,
-				302EA4381BB7299F003C64F5 /* Login.swift */,
-				302EA43A1BB72C18003C64F5 /* TwoFAuthenticator.swift */,
 			);
 			name = RCLoginController;
 			sourceTree = "<group>";
@@ -347,15 +350,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				30553FD71BB7B17D009E4EAB /* ESModalViewController.swift in Sources */,
+				3049FDD81BC87AB6001AF426 /* RCLoginVC.swift in Sources */,
 				30553FCD1BB7B138009E4EAB /* CreateProfileVC.swift in Sources */,
 				30553FD81BB7B17D009E4EAB /* ESPresentationAnimator.swift in Sources */,
 				302EA40B1BB72895003C64F5 /* ViewController.swift in Sources */,
-				302EA4371BB72960003C64F5 /* LoginController.swift in Sources */,
+				302EA4371BB72960003C64F5 /* RCLoginController.swift in Sources */,
 				30553FDA1BB7B17D009E4EAB /* ESPresentationManager.swift in Sources */,
 				302EA4091BB72895003C64F5 /* AppDelegate.swift in Sources */,
 				30553FDD1BB7B197009E4EAB /* PhoneAndCountryCodeVC.swift in Sources */,
-				30553FE81BB8384C009E4EAB /* User.swift in Sources */,
-				302EA4391BB7299F003C64F5 /* Login.swift in Sources */,
+				30553FE81BB8384C009E4EAB /* RCUser.swift in Sources */,
+				302EA4391BB7299F003C64F5 /* RCLogin.swift in Sources */,
 				30553FD01BB7B14C009E4EAB /* ESDismissAnimator.swift in Sources */,
 				302EA43B1BB72C18003C64F5 /* TwoFAuthenticator.swift in Sources */,
 				30553FE11BB7B1A9009E4EAB /* VerificationVC.swift in Sources */,

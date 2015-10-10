@@ -9,67 +9,38 @@
 import UIKit
 
 
-
-
-func documentsDirectory() -> NSURL {
-    let documentsFolderPath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0]
-    return NSURL(string: documentsFolderPath)!
-}
-
-func fileInDocumentsDirectory(filename: String) -> String {
-    return documentsDirectory().URLByAppendingPathComponent(filename).path!
-}
-
-
-
-class ViewController: UIViewController {
-
+class ViewController: RCLoginVC { // Subclass RCLoginVC then implement presentLoginNavigation
     
-    var loginController = LoginController()
+    override var user : RCUser? {
+        didSet {
+            if self.userStatusLabel != nil && user != nil {
+                self.userStatusLabel.text = "User Logged In!"
+            }
+        }
+    }
     
-    var user : User?
+    var loginColor = UIColor(red: 253/255, green: 149/255, blue: 112/255, alpha: 1)
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
-        
-        if user == nil {
-            loginController.loadFromSaved() {
-                [weak self]
-                (user: User) in
-                self?.user = user
-            }
-            print("Verified: \(user!.phoneVerified)")
-        }
     }
     
     // viewDidAppear
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
-        
-        //Must update this if statement when checking for verification
-        if user?.phoneVerified == true {   //profile!.authID != 0 && profile?.token != 0 && profile!.userID != nil {
-            
-        } else {
-            
-        }
     }
     
-    
-    let detailTransitioningDelegate: ESPresentationManager = ESPresentationManager.sharedInstance
-
     @IBAction func loginPressed(sender: UIButton) {
-        let innerViewController = PhoneAndCountryCodeVC()
-        innerViewController.loginController = loginController
-        
-        let navCtl = ESModalNavigationController(rootViewController: innerViewController)
-        navCtl.modalPresentationStyle = UIModalPresentationStyle.Custom
-        navCtl.transitioningDelegate = detailTransitioningDelegate
-        navCtl.setNavigationBarHidden(true, animated: false)
-        presentViewController(navCtl, animated: true, completion: nil)
+        // Implement presentLoginNavigation
+        presentLoginInNavigation(authyAPIKey: "X3FQn6Gliy0TzDCJxqbfGrydzzYylcmy", loginColor: loginColor)
     }
+    
+    @IBOutlet weak var userStatusLabel: UILabel!
+    
 
 }
 
