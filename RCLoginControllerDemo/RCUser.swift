@@ -1,5 +1,5 @@
 //
-//  User.swift
+//  RCUser.swift
 //  RCLoginController
 //
 //  Created by Reid Chatham on 9/27/15.
@@ -18,7 +18,7 @@ func fileInDocumentsDirectory(filename: String) -> String {
 }
 
 
-class RCUser : Loggable {
+public class RCUser : Loggable {
     
     var phoneNumber = ""
     var countryCode = 0
@@ -26,13 +26,13 @@ class RCUser : Loggable {
     var firstName : String?
     var lastName : String?
     
-    var savePath : String { return fileInDocumentsDirectory("user.plist") }
+    public var savePath : String { return fileInDocumentsDirectory("user.plist") }
     
-    required init() {
+    required public init() {
         
     }
     
-    required init(phoneNumber: String, countryCode: Int) {
+    required public init(phoneNumber: String, countryCode: Int) {
         self.phoneNumber = phoneNumber
         self.countryCode = countryCode
     }

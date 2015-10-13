@@ -12,8 +12,8 @@
 		302EA40E1BB72895003C64F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 302EA40C1BB72895003C64F5 /* Main.storyboard */; };
 		302EA4101BB72895003C64F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 302EA40F1BB72895003C64F5 /* Assets.xcassets */; };
 		302EA4131BB72895003C64F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 302EA4111BB72895003C64F5 /* LaunchScreen.storyboard */; };
-		302EA41E1BB72895003C64F5 /* RCLoginControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302EA41D1BB72895003C64F5 /* RCLoginControllerTests.swift */; };
-		302EA4291BB72895003C64F5 /* RCLoginControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302EA4281BB72895003C64F5 /* RCLoginControllerUITests.swift */; };
+		302EA41E1BB72895003C64F5 /* RCLoginControllerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302EA41D1BB72895003C64F5 /* RCLoginControllerDemoTests.swift */; };
+		302EA4291BB72895003C64F5 /* RCLoginControllerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302EA4281BB72895003C64F5 /* RCLoginControllerDemoUITests.swift */; };
 		302EA4371BB72960003C64F5 /* RCLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302EA4361BB72960003C64F5 /* RCLoginController.swift */; settings = {ASSET_TAGS = (); }; };
 		302EA4391BB7299F003C64F5 /* RCLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302EA4381BB7299F003C64F5 /* RCLogin.swift */; settings = {ASSET_TAGS = (); }; };
 		302EA43B1BB72C18003C64F5 /* TwoFAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302EA43A1BB72C18003C64F5 /* TwoFAuthenticator.swift */; settings = {ASSET_TAGS = (); }; };
@@ -51,36 +51,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		302EA4051BB72895003C64F5 /* RCLoginController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RCLoginController.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		302EA4081BB72895003C64F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		302EA40A1BB72895003C64F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		302EA4051BB72895003C64F5 /* RCLoginControllerDemo.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RCLoginControllerDemo.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		302EA4081BB72895003C64F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = RCLoginControllerDemo/AppDelegate.swift; sourceTree = "<group>"; };
+		302EA40A1BB72895003C64F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = RCLoginControllerDemo/ViewController.swift; sourceTree = "<group>"; };
 		302EA40D1BB72895003C64F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		302EA40F1BB72895003C64F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		302EA40F1BB72895003C64F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = RCLoginControllerDemo/Assets.xcassets; sourceTree = "<group>"; };
 		302EA4121BB72895003C64F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		302EA4141BB72895003C64F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		302EA4191BB72895003C64F5 /* RCLoginControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCLoginControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		302EA41D1BB72895003C64F5 /* RCLoginControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCLoginControllerTests.swift; sourceTree = "<group>"; };
-		302EA41F1BB72895003C64F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		302EA4241BB72895003C64F5 /* RCLoginControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCLoginControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		302EA4281BB72895003C64F5 /* RCLoginControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCLoginControllerUITests.swift; sourceTree = "<group>"; };
-		302EA42A1BB72895003C64F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		302EA4361BB72960003C64F5 /* RCLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCLoginController.swift; sourceTree = "<group>"; };
-		302EA4381BB7299F003C64F5 /* RCLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCLogin.swift; sourceTree = "<group>"; };
-		302EA43A1BB72C18003C64F5 /* TwoFAuthenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoFAuthenticator.swift; sourceTree = "<group>"; };
-		3049FDD71BC87AB6001AF426 /* RCLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCLoginVC.swift; sourceTree = "<group>"; };
-		30553FCB1BB7B138009E4EAB /* CreateProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProfileVC.swift; sourceTree = "<group>"; };
-		30553FCC1BB7B138009E4EAB /* CreateProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateProfileVC.xib; sourceTree = "<group>"; };
-		30553FCF1BB7B14C009E4EAB /* ESDismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESDismissAnimator.swift; sourceTree = "<group>"; };
-		30553FD11BB7B17D009E4EAB /* ESModalNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESModalNavigationController.swift; sourceTree = "<group>"; };
-		30553FD21BB7B17D009E4EAB /* ESModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESModalViewController.swift; sourceTree = "<group>"; };
-		30553FD31BB7B17D009E4EAB /* ESPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESPresentationAnimator.swift; sourceTree = "<group>"; };
-		30553FD41BB7B17D009E4EAB /* ESPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESPresentationController.swift; sourceTree = "<group>"; };
-		30553FD51BB7B17D009E4EAB /* ESPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESPresentationManager.swift; sourceTree = "<group>"; };
-		30553FDB1BB7B197009E4EAB /* PhoneAndCountryCodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneAndCountryCodeVC.swift; sourceTree = "<group>"; };
-		30553FDC1BB7B197009E4EAB /* PhoneAndCountryCodeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhoneAndCountryCodeVC.xib; sourceTree = "<group>"; };
-		30553FDF1BB7B1A9009E4EAB /* VerificationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationVC.swift; sourceTree = "<group>"; };
-		30553FE01BB7B1A9009E4EAB /* VerificationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerificationVC.xib; sourceTree = "<group>"; };
-		30553FE71BB8384C009E4EAB /* RCUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCUser.swift; sourceTree = "<group>"; };
+		302EA4141BB72895003C64F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = RCLoginControllerDemo/Info.plist; sourceTree = "<group>"; };
+		302EA4191BB72895003C64F5 /* RCLoginControllerDemo.temp_caseinsensitive_rename.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCLoginControllerDemo.temp_caseinsensitive_rename.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		302EA41D1BB72895003C64F5 /* RCLoginControllerDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RCLoginControllerDemoTests.swift; path = RCLoginControllerDemoTests/RCLoginControllerDemoTests.swift; sourceTree = "<group>"; };
+		302EA41F1BB72895003C64F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = RCLoginControllerDemoTests/Info.plist; sourceTree = "<group>"; };
+		302EA4241BB72895003C64F5 /* RCLoginControllerDemo.temp_caseinsensitive_rename.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCLoginControllerDemo.temp_caseinsensitive_rename.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		302EA4281BB72895003C64F5 /* RCLoginControllerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RCLoginControllerDemoUITests.swift; path = RCLoginControllerDemoUITests/RCLoginControllerDemoUITests.swift; sourceTree = "<group>"; };
+		302EA42A1BB72895003C64F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = RCLoginControllerDemoUITests/Info.plist; sourceTree = "<group>"; };
+		302EA4361BB72960003C64F5 /* RCLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RCLoginController.swift; path = RCLoginControllerDemo/RCLoginController.swift; sourceTree = "<group>"; };
+		302EA4381BB7299F003C64F5 /* RCLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RCLogin.swift; path = RCLoginControllerDemo/RCLogin.swift; sourceTree = "<group>"; };
+		302EA43A1BB72C18003C64F5 /* TwoFAuthenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwoFAuthenticator.swift; path = RCLoginControllerDemo/TwoFAuthenticator.swift; sourceTree = "<group>"; };
+		3049FDD71BC87AB6001AF426 /* RCLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RCLoginVC.swift; path = RCLoginControllerDemo/RCLoginVC.swift; sourceTree = "<group>"; };
+		30553FCB1BB7B138009E4EAB /* CreateProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateProfileVC.swift; path = RCLoginControllerDemo/CreateProfileVC.swift; sourceTree = "<group>"; };
+		30553FCC1BB7B138009E4EAB /* CreateProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreateProfileVC.xib; path = RCLoginControllerDemo/CreateProfileVC.xib; sourceTree = "<group>"; };
+		30553FCF1BB7B14C009E4EAB /* ESDismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ESDismissAnimator.swift; path = RCLoginControllerDemo/ESDismissAnimator.swift; sourceTree = "<group>"; };
+		30553FD11BB7B17D009E4EAB /* ESModalNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ESModalNavigationController.swift; path = RCLoginControllerDemo/ESModalNavigationController.swift; sourceTree = "<group>"; };
+		30553FD21BB7B17D009E4EAB /* ESModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ESModalViewController.swift; path = RCLoginControllerDemo/ESModalViewController.swift; sourceTree = "<group>"; };
+		30553FD31BB7B17D009E4EAB /* ESPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ESPresentationAnimator.swift; path = RCLoginControllerDemo/ESPresentationAnimator.swift; sourceTree = "<group>"; };
+		30553FD41BB7B17D009E4EAB /* ESPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ESPresentationController.swift; path = RCLoginControllerDemo/ESPresentationController.swift; sourceTree = "<group>"; };
+		30553FD51BB7B17D009E4EAB /* ESPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ESPresentationManager.swift; path = RCLoginControllerDemo/ESPresentationManager.swift; sourceTree = "<group>"; };
+		30553FDB1BB7B197009E4EAB /* PhoneAndCountryCodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhoneAndCountryCodeVC.swift; path = RCLoginControllerDemo/PhoneAndCountryCodeVC.swift; sourceTree = "<group>"; };
+		30553FDC1BB7B197009E4EAB /* PhoneAndCountryCodeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PhoneAndCountryCodeVC.xib; path = RCLoginControllerDemo/PhoneAndCountryCodeVC.xib; sourceTree = "<group>"; };
+		30553FDF1BB7B1A9009E4EAB /* VerificationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VerificationVC.swift; path = RCLoginControllerDemo/VerificationVC.swift; sourceTree = "<group>"; };
+		30553FE01BB7B1A9009E4EAB /* VerificationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VerificationVC.xib; path = RCLoginControllerDemo/VerificationVC.xib; sourceTree = "<group>"; };
+		30553FE71BB8384C009E4EAB /* RCUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RCUser.swift; path = RCLoginControllerDemo/RCUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +111,9 @@
 		302EA3FC1BB72895003C64F5 = {
 			isa = PBXGroup;
 			children = (
-				302EA4071BB72895003C64F5 /* RCLoginController */,
-				302EA41C1BB72895003C64F5 /* RCLoginControllerTests */,
-				302EA4271BB72895003C64F5 /* RCLoginControllerUITests */,
+				302EA4071BB72895003C64F5 /* RCLoginControllerDemo */,
+				302EA41C1BB72895003C64F5 /* RCLoginControllerDemoTests */,
+				302EA4271BB72895003C64F5 /* RCLoginControllerDemoUITests */,
 				302EA4061BB72895003C64F5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,42 +121,45 @@
 		302EA4061BB72895003C64F5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				302EA4051BB72895003C64F5 /* RCLoginController.app */,
-				302EA4191BB72895003C64F5 /* RCLoginControllerTests.xctest */,
-				302EA4241BB72895003C64F5 /* RCLoginControllerUITests.xctest */,
+				302EA4051BB72895003C64F5 /* RCLoginControllerDemo.temp_caseinsensitive_rename.app */,
+				302EA4191BB72895003C64F5 /* RCLoginControllerDemo.temp_caseinsensitive_rename.xctest */,
+				302EA4241BB72895003C64F5 /* RCLoginControllerDemo.temp_caseinsensitive_rename.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		302EA4071BB72895003C64F5 /* RCLoginController */ = {
+		302EA4071BB72895003C64F5 /* RCLoginControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
 				302EA4081BB72895003C64F5 /* AppDelegate.swift */,
 				302EA40A1BB72895003C64F5 /* ViewController.swift */,
-				30553FE91BB8500E009E4EAB /* RCLoginController */,
+				30553FE91BB8500E009E4EAB /* RCLoginControllerDemo */,
 				302EA40C1BB72895003C64F5 /* Main.storyboard */,
 				302EA40F1BB72895003C64F5 /* Assets.xcassets */,
 				302EA4111BB72895003C64F5 /* LaunchScreen.storyboard */,
 				302EA4141BB72895003C64F5 /* Info.plist */,
 			);
+			name = RCLoginControllerDemo;
 			path = RCLoginController;
 			sourceTree = "<group>";
 		};
-		302EA41C1BB72895003C64F5 /* RCLoginControllerTests */ = {
+		302EA41C1BB72895003C64F5 /* RCLoginControllerDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				302EA41D1BB72895003C64F5 /* RCLoginControllerTests.swift */,
+				302EA41D1BB72895003C64F5 /* RCLoginControllerDemoTests.swift */,
 				302EA41F1BB72895003C64F5 /* Info.plist */,
 			);
+			name = RCLoginControllerDemoTests;
 			path = RCLoginControllerTests;
 			sourceTree = "<group>";
 		};
-		302EA4271BB72895003C64F5 /* RCLoginControllerUITests */ = {
+		302EA4271BB72895003C64F5 /* RCLoginControllerDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				302EA4281BB72895003C64F5 /* RCLoginControllerUITests.swift */,
+				302EA4281BB72895003C64F5 /* RCLoginControllerDemoUITests.swift */,
 				302EA42A1BB72895003C64F5 /* Info.plist */,
 			);
+			name = RCLoginControllerDemoUITests;
 			path = RCLoginControllerUITests;
 			sourceTree = "<group>";
 		};
@@ -202,7 +205,7 @@
 			name = ESPresentationController;
 			sourceTree = "<group>";
 		};
-		30553FE91BB8500E009E4EAB /* RCLoginController */ = {
+		30553FE91BB8500E009E4EAB /* RCLoginControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
 				3049FDD71BC87AB6001AF426 /* RCLoginVC.swift */,
@@ -213,15 +216,15 @@
 				30553FE31BB7B1B5009E4EAB /* LoginVCs */,
 				30553FE61BB7B23E009E4EAB /* ESPresentationController */,
 			);
-			name = RCLoginController;
+			name = RCLoginControllerDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		302EA4041BB72895003C64F5 /* RCLoginController */ = {
+		302EA4041BB72895003C64F5 /* RCLoginControllerDemo.temp_caseinsensitive_rename */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 302EA42D1BB72895003C64F5 /* Build configuration list for PBXNativeTarget "RCLoginController" */;
+			buildConfigurationList = 302EA42D1BB72895003C64F5 /* Build configuration list for PBXNativeTarget "RCLoginControllerDemo.temp_caseinsensitive_rename" */;
 			buildPhases = (
 				302EA4011BB72895003C64F5 /* Sources */,
 				302EA4021BB72895003C64F5 /* Frameworks */,
@@ -231,14 +234,14 @@
 			);
 			dependencies = (
 			);
-			name = RCLoginController;
+			name = RCLoginControllerDemo.temp_caseinsensitive_rename;
 			productName = RCLoginController;
-			productReference = 302EA4051BB72895003C64F5 /* RCLoginController.app */;
+			productReference = 302EA4051BB72895003C64F5 /* RCLoginControllerDemo.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
-		302EA4181BB72895003C64F5 /* RCLoginControllerTests */ = {
+		302EA4181BB72895003C64F5 /* RCLoginControllerDemo.temp_caseinsensitive_renameTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 302EA4301BB72895003C64F5 /* Build configuration list for PBXNativeTarget "RCLoginControllerTests" */;
+			buildConfigurationList = 302EA4301BB72895003C64F5 /* Build configuration list for PBXNativeTarget "RCLoginControllerDemo.temp_caseinsensitive_renameTests" */;
 			buildPhases = (
 				302EA4151BB72895003C64F5 /* Sources */,
 				302EA4161BB72895003C64F5 /* Frameworks */,
@@ -249,14 +252,14 @@
 			dependencies = (
 				302EA41B1BB72895003C64F5 /* PBXTargetDependency */,
 			);
-			name = RCLoginControllerTests;
+			name = RCLoginControllerDemo.temp_caseinsensitive_renameTests;
 			productName = RCLoginControllerTests;
-			productReference = 302EA4191BB72895003C64F5 /* RCLoginControllerTests.xctest */;
+			productReference = 302EA4191BB72895003C64F5 /* RCLoginControllerDemo.temp_caseinsensitive_rename.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		302EA4231BB72895003C64F5 /* RCLoginControllerUITests */ = {
+		302EA4231BB72895003C64F5 /* RCLoginControllerDemo.temp_caseinsensitive_renameUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 302EA4331BB72895003C64F5 /* Build configuration list for PBXNativeTarget "RCLoginControllerUITests" */;
+			buildConfigurationList = 302EA4331BB72895003C64F5 /* Build configuration list for PBXNativeTarget "RCLoginControllerDemo.temp_caseinsensitive_renameUITests" */;
 			buildPhases = (
 				302EA4201BB72895003C64F5 /* Sources */,
 				302EA4211BB72895003C64F5 /* Frameworks */,
@@ -267,9 +270,9 @@
 			dependencies = (
 				302EA4261BB72895003C64F5 /* PBXTargetDependency */,
 			);
-			name = RCLoginControllerUITests;
+			name = RCLoginControllerDemo.temp_caseinsensitive_renameUITests;
 			productName = RCLoginControllerUITests;
-			productReference = 302EA4241BB72895003C64F5 /* RCLoginControllerUITests.xctest */;
+			productReference = 302EA4241BB72895003C64F5 /* RCLoginControllerDemo.temp_caseinsensitive_rename.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -294,7 +297,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 302EA4001BB72895003C64F5 /* Build configuration list for PBXProject "RCLoginController" */;
+			buildConfigurationList = 302EA4001BB72895003C64F5 /* Build configuration list for PBXProject "RCLoginControllerDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -307,9 +310,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				302EA4041BB72895003C64F5 /* RCLoginController */,
-				302EA4181BB72895003C64F5 /* RCLoginControllerTests */,
-				302EA4231BB72895003C64F5 /* RCLoginControllerUITests */,
+				302EA4041BB72895003C64F5 /* RCLoginControllerDemo.temp_caseinsensitive_rename */,
+				302EA4181BB72895003C64F5 /* RCLoginControllerDemo.temp_caseinsensitive_renameTests */,
+				302EA4231BB72895003C64F5 /* RCLoginControllerDemo.temp_caseinsensitive_renameUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -372,7 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				302EA41E1BB72895003C64F5 /* RCLoginControllerTests.swift in Sources */,
+				302EA41E1BB72895003C64F5 /* RCLoginControllerDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,7 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				302EA4291BB72895003C64F5 /* RCLoginControllerUITests.swift in Sources */,
+				302EA4291BB72895003C64F5 /* RCLoginControllerDemoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,12 +392,12 @@
 /* Begin PBXTargetDependency section */
 		302EA41B1BB72895003C64F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 302EA4041BB72895003C64F5 /* RCLoginController */;
+			target = 302EA4041BB72895003C64F5 /* RCLoginControllerDemo.temp_caseinsensitive_rename */;
 			targetProxy = 302EA41A1BB72895003C64F5 /* PBXContainerItemProxy */;
 		};
 		302EA4261BB72895003C64F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 302EA4041BB72895003C64F5 /* RCLoginController */;
+			target = 302EA4041BB72895003C64F5 /* RCLoginControllerDemo.temp_caseinsensitive_rename */;
 			targetProxy = 302EA4251BB72895003C64F5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -508,8 +511,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RCLoginController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rchatham.RCLoginController;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rchatham.RCLoginControllerDemo;
+				PRODUCT_NAME = RCLoginControllerDemo.temp_caseinsensitive_rename;
 			};
 			name = Debug;
 		};
@@ -519,8 +522,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RCLoginController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rchatham.RCLoginController;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rchatham.RCLoginControllerDemo;
+				PRODUCT_NAME = RCLoginControllerDemo.temp_caseinsensitive_rename;
 			};
 			name = Release;
 		};
@@ -531,8 +534,8 @@
 				INFOPLIST_FILE = RCLoginControllerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rchatham.RCLoginControllerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RCLoginController.app/RCLoginController";
+				PRODUCT_NAME = RCLoginControllerDemo.temp_caseinsensitive_rename;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RCLoginControllerDemo.temp_caseinsensitive_rename.app/RCLoginControllerDemo.temp_caseinsensitive_rename";
 			};
 			name = Debug;
 		};
@@ -543,8 +546,8 @@
 				INFOPLIST_FILE = RCLoginControllerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rchatham.RCLoginControllerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RCLoginController.app/RCLoginController";
+				PRODUCT_NAME = RCLoginControllerDemo.temp_caseinsensitive_rename;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RCLoginControllerDemo.temp_caseinsensitive_rename.app/RCLoginControllerDemo.temp_caseinsensitive_rename";
 			};
 			name = Release;
 		};
@@ -554,7 +557,7 @@
 				INFOPLIST_FILE = RCLoginControllerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rchatham.RCLoginControllerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RCLoginControllerDemo.temp_caseinsensitive_rename;
 				TEST_TARGET_NAME = RCLoginController;
 				USES_XCTRUNNER = YES;
 			};
@@ -566,7 +569,7 @@
 				INFOPLIST_FILE = RCLoginControllerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rchatham.RCLoginControllerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RCLoginControllerDemo.temp_caseinsensitive_rename;
 				TEST_TARGET_NAME = RCLoginController;
 				USES_XCTRUNNER = YES;
 			};
@@ -575,7 +578,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		302EA4001BB72895003C64F5 /* Build configuration list for PBXProject "RCLoginController" */ = {
+		302EA4001BB72895003C64F5 /* Build configuration list for PBXProject "RCLoginControllerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				302EA42B1BB72895003C64F5 /* Debug */,
@@ -584,7 +587,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		302EA42D1BB72895003C64F5 /* Build configuration list for PBXNativeTarget "RCLoginController" */ = {
+		302EA42D1BB72895003C64F5 /* Build configuration list for PBXNativeTarget "RCLoginControllerDemo.temp_caseinsensitive_rename" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				302EA42E1BB72895003C64F5 /* Debug */,
@@ -593,7 +596,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		302EA4301BB72895003C64F5 /* Build configuration list for PBXNativeTarget "RCLoginControllerTests" */ = {
+		302EA4301BB72895003C64F5 /* Build configuration list for PBXNativeTarget "RCLoginControllerDemo.temp_caseinsensitive_renameTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				302EA4311BB72895003C64F5 /* Debug */,
@@ -602,7 +605,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		302EA4331BB72895003C64F5 /* Build configuration list for PBXNativeTarget "RCLoginControllerUITests" */ = {
+		302EA4331BB72895003C64F5 /* Build configuration list for PBXNativeTarget "RCLoginControllerDemo.temp_caseinsensitive_renameUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				302EA4341BB72895003C64F5 /* Debug */,

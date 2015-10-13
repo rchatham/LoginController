@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "302EA4041BB72895003C64F5"
-               BuildableName = "RCLoginController.app"
-               BlueprintName = "RCLoginController"
-               ReferencedContainer = "container:RCLoginController.xcodeproj">
+               BuildableName = "RCLoginControllerDemo.temp_caseinsensitive_rename.app"
+               BlueprintName = "RCLoginControllerDemo.temp_caseinsensitive_rename"
+               ReferencedContainer = "container:RCLoginControllerDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "302EA4181BB72895003C64F5"
-               BuildableName = "RCLoginControllerTests.xctest"
-               BlueprintName = "RCLoginControllerTests"
-               ReferencedContainer = "container:RCLoginController.xcodeproj">
+               BuildableName = "RCLoginControllerDemo.temp_caseinsensitive_rename.xctest"
+               BlueprintName = "RCLoginControllerDemo.temp_caseinsensitive_renameTests"
+               ReferencedContainer = "container:RCLoginControllerDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "302EA4231BB72895003C64F5"
-               BuildableName = "RCLoginControllerUITests.xctest"
-               BlueprintName = "RCLoginControllerUITests"
-               ReferencedContainer = "container:RCLoginController.xcodeproj">
+               BuildableName = "RCLoginControllerDemo.temp_caseinsensitive_rename.xctest"
+               BlueprintName = "RCLoginControllerDemo.temp_caseinsensitive_renameUITests"
+               ReferencedContainer = "container:RCLoginControllerDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "302EA4041BB72895003C64F5"
-            BuildableName = "RCLoginController.app"
-            BlueprintName = "RCLoginController"
-            ReferencedContainer = "container:RCLoginController.xcodeproj">
+            BuildableName = "RCLoginControllerDemo.temp_caseinsensitive_rename.app"
+            BlueprintName = "RCLoginControllerDemo.temp_caseinsensitive_rename"
+            ReferencedContainer = "container:RCLoginControllerDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "302EA4041BB72895003C64F5"
-            BuildableName = "RCLoginController.app"
-            BlueprintName = "RCLoginController"
-            ReferencedContainer = "container:RCLoginController.xcodeproj">
+            BuildableName = "RCLoginControllerDemo.temp_caseinsensitive_rename.app"
+            BlueprintName = "RCLoginControllerDemo.temp_caseinsensitive_rename"
+            ReferencedContainer = "container:RCLoginControllerDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "302EA4041BB72895003C64F5"
-            BuildableName = "RCLoginController.app"
-            BlueprintName = "RCLoginController"
-            ReferencedContainer = "container:RCLoginController.xcodeproj">
+            BuildableName = "RCLoginControllerDemo.temp_caseinsensitive_rename.app"
+            BlueprintName = "RCLoginControllerDemo.temp_caseinsensitive_rename"
+            ReferencedContainer = "container:RCLoginControllerDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  RCLoginController
+//  RCLoginControllerDemo
 //
 //  Created by Reid Chatham on 9/26/15.
 //  Copyright © 2015 Hermes Messenger LLC. All rights reserved.

@@ -1,5 +1,5 @@
 //
-//  Login.swift
+//  RCLogin.swift
 //  RCLoginController
 //
 //  Created by Reid Chatham on 9/26/15.

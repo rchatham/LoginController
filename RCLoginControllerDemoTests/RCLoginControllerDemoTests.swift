@@ -7,9 +7,9 @@
 //
 
 import XCTest
-@testable import RCLoginController
+@testable import RCLoginControllerDemo
 
-class RCLoginControllerTests: XCTestCase {
+class RCLoginControllerDemoTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

@@ -8,7 +8,7 @@
 
 import XCTest
 
-class RCLoginControllerUITests: XCTestCase {
+class RCLoginControllerDemoUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
