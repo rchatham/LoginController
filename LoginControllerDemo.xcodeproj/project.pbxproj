@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		30247BFF1BCC380B00A08F5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30247BFE1BCC380B00A08F5B /* AppDelegate.swift */; };
-		30247C011BCC380B00A08F5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30247C001BCC380B00A08F5B /* ViewController.swift */; };
-		30247C041BCC380B00A08F5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30247C021BCC380B00A08F5B /* Main.storyboard */; };
 		30247C061BCC380B00A08F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30247C051BCC380B00A08F5B /* Assets.xcassets */; };
-		30247C091BCC380B00A08F5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30247C071BCC380B00A08F5B /* LaunchScreen.storyboard */; };
+		304DEBE41D89F8DE00BD93E3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30247C0A1BCC380B00A08F5B /* Info.plist */; };
+		304DEBE81D89FBFF00BD93E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DEBE61D89FBFF00BD93E3 /* ViewController.swift */; };
+		304DEBE91D89FBFF00BD93E3 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304DEBE71D89FBFF00BD93E3 /* ViewController.xib */; };
+		304DEBEB1D8A13F400BD93E3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DEBEA1D8A13F400BD93E3 /* LoginViewController.swift */; };
 		30DC43711D88C6C700C3C919 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC43701D88C6C700C3C919 /* User.swift */; };
 		30FC10CF1D89243B00C0F3C4 /* LoginController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FC10CE1D89243B00C0F3C4 /* LoginController.framework */; };
 /* End PBXBuildFile section */
@@ -32,11 +33,11 @@
 /* Begin PBXFileReference section */
 		30247BFB1BCC380B00A08F5B /* LoginControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30247BFE1BCC380B00A08F5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30247C001BCC380B00A08F5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		30247C031BCC380B00A08F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30247C051BCC380B00A08F5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		30247C081BCC380B00A08F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30247C0A1BCC380B00A08F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		304DEBE61D89FBFF00BD93E3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		304DEBE71D89FBFF00BD93E3 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		304DEBEA1D8A13F400BD93E3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		30DC43701D88C6C700C3C919 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		30FC10CE1D89243B00C0F3C4 /* LoginController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LoginController.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,12 +74,12 @@
 		30247BFD1BCC380B00A08F5B /* LoginControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				304DEBEA1D8A13F400BD93E3 /* LoginViewController.swift */,
 				30247BFE1BCC380B00A08F5B /* AppDelegate.swift */,
 				30DC43701D88C6C700C3C919 /* User.swift */,
-				30247C001BCC380B00A08F5B /* ViewController.swift */,
-				30247C021BCC380B00A08F5B /* Main.storyboard */,
+				304DEBE61D89FBFF00BD93E3 /* ViewController.swift */,
+				304DEBE71D89FBFF00BD93E3 /* ViewController.xib */,
 				30247C051BCC380B00A08F5B /* Assets.xcassets */,
-				30247C071BCC380B00A08F5B /* LaunchScreen.storyboard */,
 				30247C0A1BCC380B00A08F5B /* Info.plist */,
 			);
 			path = LoginControllerDemo;
@@ -142,9 +143,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30247C091BCC380B00A08F5B /* LaunchScreen.storyboard in Resources */,
+				304DEBE41D89F8DE00BD93E3 /* Info.plist in Resources */,
+				304DEBE91D89FBFF00BD93E3 /* ViewController.xib in Resources */,
 				30247C061BCC380B00A08F5B /* Assets.xcassets in Resources */,
-				30247C041BCC380B00A08F5B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,32 +156,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30247C011BCC380B00A08F5B /* ViewController.swift in Sources */,
+				304DEBEB1D8A13F400BD93E3 /* LoginViewController.swift in Sources */,
+				304DEBE81D89FBFF00BD93E3 /* ViewController.swift in Sources */,
 				30247BFF1BCC380B00A08F5B /* AppDelegate.swift in Sources */,
 				30DC43711D88C6C700C3C919 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		30247C021BCC380B00A08F5B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				30247C031BCC380B00A08F5B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		30247C071BCC380B00A08F5B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				30247C081BCC380B00A08F5B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		30247C211BCC380B00A08F5B /* Debug */ = {
@@ -224,7 +207,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -261,7 +244,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -274,10 +257,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = RCLoginControllerDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LoginControllerDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rchatham.LoginControllerDemo;
 				PRODUCT_NAME = LoginControllerDemo;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -289,10 +273,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = RCLoginControllerDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LoginControllerDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rchatham.LoginControllerDemo;
 				PRODUCT_NAME = LoginControllerDemo;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

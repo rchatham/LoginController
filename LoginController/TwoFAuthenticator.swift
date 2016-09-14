@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 public class TwoFAuthenticator: NSObject {
     
     let authyKey : String
@@ -20,19 +19,12 @@ public class TwoFAuthenticator: NSObject {
     
     public func createNewUser(phoneNumber: String, countryCode: Int, email: String = "user@email.com", completionHandler: (NSNumber -> ())? ) {
         
-        
-//        print("Create New Authy User")
-        
         let requestString = "https://api.authy.com/protected/json/users/new?api_key=\(authyKey)"
-        
         let requestFromAuthy = NSMutableURLRequest(URL: NSURL(string: requestString)!)
         requestFromAuthy.HTTPMethod = "POST"
         
         
         let newUserPost = ["user": ["cellphone": phoneNumber, "country_code": "\(countryCode)", "email": email]] as NSDictionary
-        
-//        print("\(newUserPost)")
-        
         
         requestFromAuthy.addValue("application/json;charset=utf-8", forHTTPHeaderField: "Content-Type")
         requestFromAuthy.addValue("278", forHTTPHeaderField: "Content-Length")
@@ -43,9 +35,8 @@ public class TwoFAuthenticator: NSObject {
             requestFromAuthy.HTTPBody = nil
         }
         
-        
         let session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
-        let task = session.dataTaskWithRequest(requestFromAuthy) {
+        session.dataTaskWithRequest(requestFromAuthy) {
             (data, response, error) in
             
             guard error == nil else {
@@ -53,76 +44,58 @@ public class TwoFAuthenticator: NSObject {
                 return
             }
             
-            if let data = data {
-                
-                let user = (try! NSJSONSerialization.JSONObjectWithData(data, options: [])) as! NSDictionary
-                
+            guard let data = data, user = (try? NSJSONSerialization.JSONObjectWithData(data, options: [])) as? NSDictionary else { return }
                 //Saving the AuthId that is needed when creating another user and retreiving SMS Tokens
                 
-                print("The user info is: " + user.description)
-                
-                if (user["message"] as? String) == "Invalid API key." {
-                    fatalError("Authy API key is invalid!")
-                } else {
-                    let userObj = user["user"] as! NSDictionary
-                    let id = userObj["id"] as! NSNumber
-                    
-//                    print("Auth ID: \(id)")
-                    
-                    dispatch_async(dispatch_get_main_queue()) {
-                        completionHandler?(id)
-                    }
-                }
-                
+            print("The user info is: " + user.description)
+            
+            guard (user["message"] as? String) != "Invalid API key."
+                else { fatalError("Authy API key is invalid!") }
+            
+            let userObj = user["user"] as! NSDictionary
+            let id = userObj["id"] as! NSNumber
+            
+            dispatch_async(dispatch_get_main_queue()) {
+                completionHandler?(id)
             }
-        }
-        task.resume()
+        }.resume()
     }
     
     public func requestSMSToken(authID: NSNumber, completionHandler: (Void -> Void)? = nil ) {
-        
-//        print("Request SMS Token")
         
         let requestString = "https://api.authy.com/protected/json/sms/\(authID)?api_key=\(authyKey)&force=true"
         
         let requestFromAuthy = NSMutableURLRequest(URL: NSURL(string: requestString)!)
         requestFromAuthy.HTTPMethod = "GET"
         
-        
         let session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
         
-        let task = session.dataTaskWithRequest(requestFromAuthy) {
+        session.dataTaskWithRequest(requestFromAuthy) {
             (data, response, error) in
             
-            if error != nil {
+            guard error == nil else {
                 print("POST Error calling to request SMS token: \(error!.description)")
-            } else if data != nil {
+                return
+            }
+            
+            guard let data = data, user = (try? NSJSONSerialization.JSONObjectWithData(data, options: [])) as? NSDictionary else { return }
+            
                 
-                let user = (try! NSJSONSerialization.JSONObjectWithData(data!, options: [])) as! NSDictionary
+            let success = user["success"] as! Int
                 
+            if success == 0 {
                 
-//                print("The sms info is: " + user.description)
-                
-                let success = user["success"] as! Int
-                
-//                print("\(success)")
-                
-                if success == 0 {
+                dispatch_async(dispatch_get_main_queue()) {
                     
-                    dispatch_async(dispatch_get_main_queue()) {
-                        
-                        let alert = UIAlertController(title: "OPPS", message: "There was an Error requesting SMS code, please try again later", preferredStyle: .Alert)
-                        alert.addAction(UIAlertAction(title: "OK", style: .Default) { (action) -> Void in })
-                        let rootVC = UIApplication.sharedApplication().keyWindow?.rootViewController
-                        rootVC?.presentViewController(alert, animated: true) { () -> Void in}
-                        
-                        completionHandler?()
-                    }
+                    let alert = UIAlertController(title: "OPPS", message: "There was an Error requesting SMS code, please try again later", preferredStyle: .Alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .Default) { (action) -> Void in })
+                    let rootVC = UIApplication.sharedApplication().keyWindow?.rootViewController
+                    rootVC?.presentViewController(alert, animated: true) { () -> Void in}
+                    
+                    completionHandler?()
                 }
             }
-        }
-        task.resume()
-        
+        }.resume()
     }
     
     
@@ -138,7 +111,7 @@ public class TwoFAuthenticator: NSObject {
         openingHandler?(indicator)
         
         let session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
-        let task = session.dataTaskWithRequest(verifyFromAuthy) {
+        session.dataTaskWithRequest(verifyFromAuthy) {
             (data, response, error) -> Void in
             
             dispatch_async(dispatch_get_main_queue()) {
@@ -150,44 +123,33 @@ public class TwoFAuthenticator: NSObject {
                     return
                 }
                 
-                if let data = data {
+                guard let data = data, user = (try? NSJSONSerialization.JSONObjectWithData(data, options: [])) as? NSDictionary else { return }
+                
+                if let successString = user["success"] as? NSString {
+                    success = successString.boolValue
                     
-                    let user = (try! NSJSONSerialization.JSONObjectWithData(data, options: [])) as! NSDictionary
-                    
-//                    print("The verify info is: " + user.description)
-                    if let successString = user["success"] as? NSString {
-                        success = successString.boolValue
-                        
-                        if success {
-                            print("Verified = \(success) on 2FA")
-                        } else {
-                            let alert = UIAlertController(title: "OPPS", message: "There was an Error. Please Press the Send Again! Button", preferredStyle: .Alert)
-                            alert.addAction(UIAlertAction(title: "OK", style: .Default) { (action) -> Void in })
-                            let rootVC = UIApplication.sharedApplication().keyWindow?.rootViewController
-                            rootVC?.presentViewController(alert, animated: true) { () -> Void in }
-                        }
-                        
-                    } else if (user["success"] as? Bool != nil) {
-                        success = user["success"] as! Bool
-                        if success {
-                            print("Verified = \(success) on 2FA")
-                        } else {
-                            let alert = UIAlertController(title: "OPPS", message: "There was an Error. Please Press the Send Again! Button", preferredStyle: .Alert)
-                            alert.addAction(UIAlertAction(title: "OK", style: .Default) { (action) -> Void in })
-                            let rootVC = UIApplication.sharedApplication().keyWindow?.rootViewController
-                            rootVC?.presentViewController(alert, animated: true) { () -> Void in }
-                        }
-                        
+                    if success {
+                        print("Verified = \(success) on 2FA")
+                    } else {
+                        let alert = UIAlertController(title: "OPPS", message: "There was an Error. Please Press the Send Again! Button", preferredStyle: .Alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .Default) { (action) -> Void in })
+                        let rootVC = UIApplication.sharedApplication().keyWindow?.rootViewController
+                        rootVC?.presentViewController(alert, animated: true) { () -> Void in }
                     }
                     
+                } else if (user["success"] as? Bool != nil) {
+                    success = user["success"] as! Bool
+                    if success {
+                        print("Verified = \(success) on 2FA")
+                    } else {
+                        let alert = UIAlertController(title: "OPPS", message: "There was an Error. Please Press the Send Again! Button", preferredStyle: .Alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .Default) { (action) -> Void in })
+                        let rootVC = UIApplication.sharedApplication().keyWindow?.rootViewController
+                        rootVC?.presentViewController(alert, animated: true) { () -> Void in }
+                    }
                 }
-                
                 completionHandler?(success, indicator)
-                
             }
-            
-        }
-        task.resume()
-        
+        }.resume()
     }
 }

@@ -7,29 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30025F271D89EA5D00ECEBB2 /* Loggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30025F261D89EA5D00ECEBB2 /* Loggable.swift */; };
 		30247BB61BCC334900A08F5B /* LoginController.h in Headers */ = {isa = PBXBuildFile; fileRef = 30247BB51BCC334900A08F5B /* LoginController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30247BBD1BCC334900A08F5B /* LoginController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30247BB21BCC334900A08F5B /* LoginController.framework */; };
 		30247BC21BCC334900A08F5B /* LoginControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30247BC11BCC334900A08F5B /* LoginControllerTests.swift */; };
-		30247BCF1BCC337600A08F5B /* PhoneAndCountryCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30247BCD1BCC337600A08F5B /* PhoneAndCountryCodeViewController.swift */; };
-		30247BD01BCC337600A08F5B /* PhoneAndCountryCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30247BCE1BCC337600A08F5B /* PhoneAndCountryCodeViewController.xib */; };
-		30247BD31BCC338E00A08F5B /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30247BD11BCC338E00A08F5B /* CreateProfileViewController.swift */; };
-		30247BD41BCC338E00A08F5B /* CreateProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30247BD21BCC338E00A08F5B /* CreateProfileViewController.xib */; };
-		30247BD71BCC33A300A08F5B /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30247BD51BCC33A300A08F5B /* VerificationViewController.swift */; };
-		30247BD81BCC33A300A08F5B /* VerificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30247BD61BCC33A300A08F5B /* VerificationViewController.xib */; };
-		30247C371BCC3F3000A08F5B /* ESModalNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30247C351BCC3F3000A08F5B /* ESModalNavigationController.swift */; };
-		30247C381BCC3F3000A08F5B /* ESModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30247C361BCC3F3000A08F5B /* ESModalViewController.swift */; };
-		30247C3A1BCC3F5100A08F5B /* ESDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30247C391BCC3F5100A08F5B /* ESDismissAnimator.swift */; };
-		30247C3E1BCC3F6100A08F5B /* ESPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30247C3B1BCC3F6100A08F5B /* ESPresentationAnimator.swift */; };
-		30247C3F1BCC3F6100A08F5B /* ESPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30247C3C1BCC3F6100A08F5B /* ESPresentationController.swift */; };
-		30247C401BCC3F6100A08F5B /* ESPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30247C3D1BCC3F6100A08F5B /* ESPresentationManager.swift */; };
 		30247C461BCC3F8500A08F5B /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30247C411BCC3F8500A08F5B /* Login.swift */; };
 		30247C471BCC3F8500A08F5B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30247C421BCC3F8500A08F5B /* LoginController.swift */; };
-		30247C481BCC3F8500A08F5B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30247C431BCC3F8500A08F5B /* LoginViewController.swift */; };
-		30247C491BCC3F8500A08F5B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30247C441BCC3F8500A08F5B /* User.swift */; };
 		30247C4A1BCC3F8500A08F5B /* TwoFAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30247C451BCC3F8500A08F5B /* TwoFAuthenticator.swift */; };
 		3058DCF11BFFB9F30092AE67 /* VerifyingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3058DCF01BFFB9F30092AE67 /* VerifyingView.swift */; };
 		30DC436F1D88C23000C3C919 /* NSURL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC436E1D88C23000C3C919 /* NSURL+Extensions.swift */; };
-		30FC10CD1D891A2B00C0F3C4 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FC10CC1D891A2B00C0F3C4 /* LoginPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,32 +29,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30025F261D89EA5D00ECEBB2 /* Loggable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loggable.swift; sourceTree = "<group>"; };
 		30247BB21BCC334900A08F5B /* LoginController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoginController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30247BB51BCC334900A08F5B /* LoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
 		30247BB71BCC334900A08F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30247BBC1BCC334900A08F5B /* LoginController.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginController.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30247BC11BCC334900A08F5B /* LoginControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginControllerTests.swift; sourceTree = "<group>"; };
 		30247BC31BCC334900A08F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		30247BCD1BCC337600A08F5B /* PhoneAndCountryCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneAndCountryCodeViewController.swift; sourceTree = "<group>"; };
-		30247BCE1BCC337600A08F5B /* PhoneAndCountryCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhoneAndCountryCodeViewController.xib; sourceTree = "<group>"; };
-		30247BD11BCC338E00A08F5B /* CreateProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
-		30247BD21BCC338E00A08F5B /* CreateProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateProfileViewController.xib; sourceTree = "<group>"; };
-		30247BD51BCC33A300A08F5B /* VerificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
-		30247BD61BCC33A300A08F5B /* VerificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerificationViewController.xib; sourceTree = "<group>"; };
-		30247C351BCC3F3000A08F5B /* ESModalNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESModalNavigationController.swift; sourceTree = "<group>"; };
-		30247C361BCC3F3000A08F5B /* ESModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESModalViewController.swift; sourceTree = "<group>"; };
-		30247C391BCC3F5100A08F5B /* ESDismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESDismissAnimator.swift; sourceTree = "<group>"; };
-		30247C3B1BCC3F6100A08F5B /* ESPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESPresentationAnimator.swift; sourceTree = "<group>"; };
-		30247C3C1BCC3F6100A08F5B /* ESPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESPresentationController.swift; sourceTree = "<group>"; };
-		30247C3D1BCC3F6100A08F5B /* ESPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESPresentationManager.swift; sourceTree = "<group>"; };
 		30247C411BCC3F8500A08F5B /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		30247C421BCC3F8500A08F5B /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		30247C431BCC3F8500A08F5B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		30247C441BCC3F8500A08F5B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		30247C451BCC3F8500A08F5B /* TwoFAuthenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoFAuthenticator.swift; sourceTree = "<group>"; };
 		3058DCF01BFFB9F30092AE67 /* VerifyingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyingView.swift; sourceTree = "<group>"; };
 		30DC436E1D88C23000C3C919 /* NSURL+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURL+Extensions.swift"; sourceTree = "<group>"; };
-		30FC10CC1D891A2B00C0F3C4 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,16 +84,12 @@
 			isa = PBXGroup;
 			children = (
 				30247BB51BCC334900A08F5B /* LoginController.h */,
-				30247C431BCC3F8500A08F5B /* LoginViewController.swift */,
-				30FC10CC1D891A2B00C0F3C4 /* LoginPresenter.swift */,
-				30247C441BCC3F8500A08F5B /* User.swift */,
 				30247C421BCC3F8500A08F5B /* LoginController.swift */,
 				30247C411BCC3F8500A08F5B /* Login.swift */,
+				30025F261D89EA5D00ECEBB2 /* Loggable.swift */,
 				30247C451BCC3F8500A08F5B /* TwoFAuthenticator.swift */,
 				3058DCF01BFFB9F30092AE67 /* VerifyingView.swift */,
 				30DC436E1D88C23000C3C919 /* NSURL+Extensions.swift */,
-				30247BCC1BCC335200A08F5B /* LoginVCs */,
-				30247BD91BCC33AD00A08F5B /* ESPresentationController */,
 				30247BB71BCC334900A08F5B /* Info.plist */,
 			);
 			path = LoginController;
@@ -134,48 +102,6 @@
 				30247BC31BCC334900A08F5B /* Info.plist */,
 			);
 			path = LoginControllerTests;
-			sourceTree = "<group>";
-		};
-		30247BCC1BCC335200A08F5B /* LoginVCs */ = {
-			isa = PBXGroup;
-			children = (
-				30247BCD1BCC337600A08F5B /* PhoneAndCountryCodeViewController.swift */,
-				30247BCE1BCC337600A08F5B /* PhoneAndCountryCodeViewController.xib */,
-				30247BD51BCC33A300A08F5B /* VerificationViewController.swift */,
-				30247BD61BCC33A300A08F5B /* VerificationViewController.xib */,
-				30247BD11BCC338E00A08F5B /* CreateProfileViewController.swift */,
-				30247BD21BCC338E00A08F5B /* CreateProfileViewController.xib */,
-			);
-			name = LoginVCs;
-			sourceTree = "<group>";
-		};
-		30247BD91BCC33AD00A08F5B /* ESPresentationController */ = {
-			isa = PBXGroup;
-			children = (
-				30247BDB1BCC341700A08F5B /* ParentsForModals */,
-				30247BDA1BCC33C400A08F5B /* PresentationControl */,
-			);
-			name = ESPresentationController;
-			sourceTree = "<group>";
-		};
-		30247BDA1BCC33C400A08F5B /* PresentationControl */ = {
-			isa = PBXGroup;
-			children = (
-				30247C3B1BCC3F6100A08F5B /* ESPresentationAnimator.swift */,
-				30247C3C1BCC3F6100A08F5B /* ESPresentationController.swift */,
-				30247C3D1BCC3F6100A08F5B /* ESPresentationManager.swift */,
-				30247C391BCC3F5100A08F5B /* ESDismissAnimator.swift */,
-			);
-			name = PresentationControl;
-			sourceTree = "<group>";
-		};
-		30247BDB1BCC341700A08F5B /* ParentsForModals */ = {
-			isa = PBXGroup;
-			children = (
-				30247C351BCC3F3000A08F5B /* ESModalNavigationController.swift */,
-				30247C361BCC3F3000A08F5B /* ESModalViewController.swift */,
-			);
-			name = ParentsForModals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,9 +195,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30247BD41BCC338E00A08F5B /* CreateProfileViewController.xib in Resources */,
-				30247BD01BCC337600A08F5B /* PhoneAndCountryCodeViewController.xib in Resources */,
-				30247BD81BCC33A300A08F5B /* VerificationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,22 +213,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				30DC436F1D88C23000C3C919 /* NSURL+Extensions.swift in Sources */,
-				30247BD71BCC33A300A08F5B /* VerificationViewController.swift in Sources */,
 				30247C4A1BCC3F8500A08F5B /* TwoFAuthenticator.swift in Sources */,
-				30247C481BCC3F8500A08F5B /* LoginViewController.swift in Sources */,
-				30247C3F1BCC3F6100A08F5B /* ESPresentationController.swift in Sources */,
 				30247C461BCC3F8500A08F5B /* Login.swift in Sources */,
+				30025F271D89EA5D00ECEBB2 /* Loggable.swift in Sources */,
 				30247C471BCC3F8500A08F5B /* LoginController.swift in Sources */,
-				30247C381BCC3F3000A08F5B /* ESModalViewController.swift in Sources */,
-				30247BD31BCC338E00A08F5B /* CreateProfileViewController.swift in Sources */,
-				30FC10CD1D891A2B00C0F3C4 /* LoginPresenter.swift in Sources */,
-				30247BCF1BCC337600A08F5B /* PhoneAndCountryCodeViewController.swift in Sources */,
-				30247C371BCC3F3000A08F5B /* ESModalNavigationController.swift in Sources */,
 				3058DCF11BFFB9F30092AE67 /* VerifyingView.swift in Sources */,
-				30247C401BCC3F6100A08F5B /* ESPresentationManager.swift in Sources */,
-				30247C491BCC3F8500A08F5B /* User.swift in Sources */,
-				30247C3E1BCC3F6100A08F5B /* ESPresentationAnimator.swift in Sources */,
-				30247C3A1BCC3F5100A08F5B /* ESDismissAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
