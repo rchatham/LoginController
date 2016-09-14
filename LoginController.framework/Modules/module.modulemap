@@ -1,0 +1,10 @@
+framework module LoginController {
+  umbrella header "LoginController.h"
+
+  export *
+  module * { export * }
+}
+
+module LoginController.Swift {
+    header "LoginController-Swift.h"
+}
